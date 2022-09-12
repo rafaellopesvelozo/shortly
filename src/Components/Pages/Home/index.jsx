@@ -26,9 +26,9 @@ const Home = () => {
 
     console.log(errors)
 
-  
 
-  
+
+
     return (
         <main className="main">
             <article>
@@ -51,7 +51,7 @@ const Home = () => {
                 <section className="section2">
                     <form className="btnGeneratorLink" onSubmit={onSubmit(handleSubmit)}>
                         <div className='inputForm'>
-                            <input style={{ border: errors.search? '1px solid red' : '' }} type="search" id="search" {...register('search')}/>
+                            <input style={{ border: errors.search ? '1px solid red' : '' }} type="search" id="search" {...register('search')} />
                             <span>{errors?.search?.message}</span>
                         </div>
                         <button type="submit">Shorten It!</button>
