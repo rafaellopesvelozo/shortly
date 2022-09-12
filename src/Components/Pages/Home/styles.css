@@ -129,7 +129,6 @@
 }
 .inputForm input {
   height: 3rem;
- 
   width: 100%;
   font-size: 1.5rem;
   border: none;
@@ -168,9 +167,12 @@
     height: 11rem;
   }
 
-  .btnGeneratorLink button,.btnGeneratorLink input{
+  .btnGeneratorLink button{
     width: 100%;
     height: 4rem;
+  }
+  .inputForm{
+    width: 100%;
   }
 }
 
