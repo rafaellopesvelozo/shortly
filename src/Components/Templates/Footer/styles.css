@@ -1,0 +1,81 @@
+.containerFooter {
+  background-color: var(--Very-Dark-Violet);
+  grid-area: footer;
+  padding: 3rem 7rem 0 7rem;
+  display: flex;
+  width: 100%;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footerNavigaion {
+  display: flex;
+  gap: 3rem;
+  margin-left: 35%;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+}
+.features p,
+.resources p,
+.company p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.features ul,
+.resources ul,
+.company ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  gap: 0.5rem;
+}
+.features li:hover,
+.resources li:hover,
+.company li:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.footerlogo img {
+  width: 7rem;
+  color: white;
+  filter: invert(99%) sepia(92%) saturate(1%) hue-rotate(200deg)
+    brightness(107%) contrast(100%);
+}
+.socialMedia img {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.socialMedia img:hover {
+  filter: invert(63%) sepia(98%) saturate(335%) hue-rotate(129deg)
+    brightness(91%) contrast(93%);
+}
+
+@media screen and (max-width: 1200px) {
+  .footerNavigaion {
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .footerNavigaion {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 967px) {
+  .footerNavigaion {
+    margin-left: 5%;
+  }
+}

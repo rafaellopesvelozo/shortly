@@ -1,0 +1,98 @@
+.containerHeader {
+  grid-area: header;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7rem;
+  width: 100%;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.links ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.links ul li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  color: var(--Grayish-Violet);
+  cursor: pointer;
+}
+
+.links ul li a {
+  color: gray;
+}
+
+.links ul li a:hover {
+  color: black;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login ul li {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--Grayish-Violet);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.login ul li a {
+  color: gray;
+}
+
+.login ul li a:hover {
+  color: black;
+}
+
+.signup ul li {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Cyan);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.signup ul li a {
+  color: white;
+}
+
+.signup ul li:hover {
+  background-color: hsl(180, 53%, 73%);
+}
+
+@media screen and (max-width: 1200px) {
+  .navigation {
+    gap: 1.5rem;
+  }
+  .links ul {
+    gap: 1rem;
+  }
+  
+.sign {
+  gap: 1rem;
+}
+}

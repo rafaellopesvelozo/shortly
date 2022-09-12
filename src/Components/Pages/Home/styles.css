@@ -1,0 +1,317 @@
+/*---------------------SECTION 1-----------------------*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.section1 {
+  display: flex;
+  height: 100vh;
+}
+.infoSction1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7rem;
+}
+.title h1 {
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+  line-height: 6rem;
+}
+.info p {
+  width: 70%;
+  color: gray;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.btnGetStarted button {
+  margin-top: 1rem;
+  width: 25%;
+  padding: 12px 25px;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Cyan);
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.btnGetStarted button:hover {
+  background-color: hsl(180, 53%, 73%);
+}
+
+.img {
+  width: 50%;
+  background-image: url("../../../Assets/images/illustration-working.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 6rem;
+}
+
+@media screen and (max-width: 967px){
+  .section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+  }
+  .infoSction1{
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+  }
+  .title,.info  {
+    width: 87%;
+    margin-bottom: 2rem;
+  }
+  .info p{
+   
+    text-align: center;
+    width: 100%;
+  }
+  .img{
+    width: 100%;
+    height: 100vh;
+   
+  }
+  .btnGetStarted{
+    width: 87%;
+  }
+}
+
+/*---------------------SECTION 2-----------------------*/
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.btnGeneratorLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 87%;
+  height: 8rem;
+  gap: 1rem;
+  border-radius: 10px;
+  margin-top: -4rem;
+  background-image: url("../../../Assets/images/bg-shorten-desktop.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--Dark-Violet);
+}
+.inputForm{
+  margin-top: .5rem;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.inputForm span{
+  height: .5rem;
+  color: red;
+  font-weight: 700;
+}
+.inputForm input {
+  height: 3rem;
+ 
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  padding-left: 2rem;
+  border-radius: 5px;
+}
+.inputAlert{
+  border: 1px solid red;
+}
+.btnGeneratorLink button {
+  height: 3rem;
+  width: 15%;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Cyan);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.btnGeneratorLink button:hover {
+  background-color: hsl(180, 53%, 73%);
+}
+
+@media screen and (max-width: 967px){
+  .section2 {
+    justify-content:space-between;
+  }
+  .btnGeneratorLink {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    height: 11rem;
+  }
+
+  .btnGeneratorLink button,.btnGeneratorLink input{
+    width: 100%;
+    height: 4rem;
+  }
+}
+
+/*---------------------cards-----------------------*/
+.statistics {
+  display: flex;
+  flex-direction: column;
+  width: 87%;
+  height: 65%;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.titleStatistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleStatistics h2 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+.titleStatistics p {
+  font-size: 1rem;
+  text-align: center;
+  width: 45%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+  margin-top: 1rem;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 4rem;
+}
+
+.card {
+  width: 30%;
+  height: 15rem;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 2rem 2rem 2rem;
+}
+.card:nth-child(2) {
+  margin-top: 2rem;
+}
+.card:nth-child(3) {
+  margin-top: 4rem;
+}
+
+.card p:nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+.card p:nth-child(3) {
+  color: rgb(180, 180, 180);
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.logoCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-top: -2rem;
+  background-color: var(--Dark-Violet);
+}
+
+.logoCard img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 967px){
+  .statistics{
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0 4rem 0;
+  }
+  .card {
+    width: 60%; 
+  }
+}
+
+/*---------------------Boost Your Links-----------------------*/
+
+.BoostYourLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+  background-image: url("../../../Assets/images/bg-boost-desktop.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--Dark-Violet);
+}
+.BoostYourLinks h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+.BoostLinksStarted button {
+  width: 11rem;
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Cyan);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px 20px;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.BoostLinksStarted button:hover {
+ 
+  background-color: hsl(180, 53%, 73%);
+ 
+}
+@media screen and (max-width: 967px){
+  .BoostYourLinks{
+    height: 100%;
+    text-align: center;
+  }
+}
