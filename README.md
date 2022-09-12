@@ -1,5 +1,5 @@
 <p align="center">👋 Olá, sou o Rafael.</p>  
-<p align="center">📚 Praticando ReactJs.</p>  
+<p align="center">📚 Praticando ReactJs, Estrutura de pastas,  React hook form e React Router Dom.</p>  
 <p align="center">📉 Landing Page Shortly</p>  
 
 <br>
