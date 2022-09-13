@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup';
-import { object, string } from 'yup'
+import * as yup from 'yup'
 
 import Logocard1 from '../../../Assets/images/icon-brand-recognition.svg'
 import Logocard2 from '../../../Assets/images/icon-detailed-records.svg'
@@ -10,8 +10,11 @@ import Logocard3 from '../../../Assets/images/icon-fully-customizable.svg'
 
 import './styles.css'
 
-const schema = object({
-    search: string().required('Required field !').min(3, 'You need to enter at least 3 characters !'),
+const schema = yup.object().shape({
+    search: yup
+        .string()
+        .min(7, 'You need to enter at least 7 characters !')
+        .required('Required field !'),
 })
 const Home = () => {
     const {
@@ -23,11 +26,6 @@ const Home = () => {
     const handleSubmit = (data) => {
         console.log(data)
     }
-
-    console.log(errors)
-
-
-
 
     return (
         <main className="main">
@@ -52,7 +50,7 @@ const Home = () => {
                     <form className="btnGeneratorLink" onSubmit={onSubmit(handleSubmit)}>
                         <div className='inputForm'>
                             <input style={{ border: errors.search ? '1px solid red' : '' }} type="search" id="search" {...register('search')} />
-                            <span>{errors?.search?.message}</span>
+                            <span className='error'>{errors?.search?.message}</span>
                         </div>
                         <button type="submit">Shorten It!</button>
                     </form>
